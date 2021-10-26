@@ -1,59 +1,122 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
 
 /* Estilos da página index.html*/
 .center {
-    text-align: center;
+  text-align: center;
 }
 .justify {
-    text-align: justify;
+  text-align: justify;
 }
 .container {
-    display: flex;
-    flex-grow: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-grow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu {
+  margin-top: 15px;
+  display: flex;
+  flex-grow: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
 }
 
 #menu li {
-    display: inline;
-    padding: 15px;
-    
+  display: inline;
+  padding: 15px;
 }
-#menu li a{
-    text-decoration: none;
-    color: blueviolet;
-    font-size: 20px;
 
+#menu li a {
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 20px;
 }
-#menu li a:hover{
-    background-color: blueviolet;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
+#menu li a:hover {
+  background-color: blueviolet;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .p-30 {
-    padding: 30px;
+  padding: 30px;
 }
 
 .br-50 {
-    border-radius: 50%;
-    
+  border-radius: 50%;
 }
 .wh-fp {
-    width: 250px;
-    height: 250px;
+  width: 250px;
+  height: 250px;
 }
 .tm-social {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
 }
 .mb-30 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 /* Estilos da página contato.html*/
 .ml-50 {
-    margin-left: 50px;
+  margin-left: 50px;
+}
+.contato {
+  display: flex;
+  min-height: 60vh;
+  width: 80vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+form {
+  width: 20vw;
+  background-color: #a4a4a430;
+  padding: 30px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 8px 4px #00000050;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #a4a4a4;
+  margin: 1rem 0;
+  width: 100%;
+  color: #0f0f0f;
+}
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0;
+  margin: 1rem 0;
+  background-color: #2274a5;
+  color: #fff;
+  font-weight: 700;
+  width: 50%;
+  transition: 0.3s ease-in;
+}
+
+button:hover {
+  filter: drop-shadow(5px 5px 2px #2274a590);
 }
